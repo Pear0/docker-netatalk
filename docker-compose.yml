@@ -1,0 +1,18 @@
+# Docker Compose file for Netatalk Time Machine
+# 
+# Make sure to update the host mount location for the TimeMachine 
+# volume (/data2/TimeMachine) to fit your environment. 
+# 
+
+timemachine:
+    image: my/netatalk
+    volumes:
+        - /data2/TimeMachine:/var/TimeMachine
+    environment:
+      AVAHI: 1
+    mem_limit: 512m
+    cpu_shares: 128
+    net: host
+    hostname: timemachine
+    restart: always
+

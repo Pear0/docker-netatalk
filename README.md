@@ -1,5 +1,5 @@
 # docker-netatalk
-An extension of cptactionhank/docker-netatalk specifically for time machine.
+An extension of [cptactionhank/docker-netatalk](https://github.com/cptactionhank/docker-netatalk) specifically for time machine.
 
 
 ## Installation
